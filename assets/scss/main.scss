@@ -4,22 +4,22 @@
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
+@import 'components/hamburger/hamburgers.scss';
 //---import vendors library 
 
 //---import base folder
-// @import 'base/base';
+@import 'base/base';
 @import 'base/reset';
 // @import 'base/typography';
 
 //---import layout folder
-// @import 'layout/header';
-// @import 'layout/functionality_section';
-// @import 'layout/productive_section';
-// @import 'layout/quotes_section';
-// @import 'layout/form_section';
-// @import 'layout/footer';
+@import 'layout/header';
+@import 'layout/services';
+@import 'layout/articles';
+@import 'layout/footer';
 
 //----import components folder
+@import 'components/navbar'
 
 //---import pages folder
 

@@ -1,0 +1,36 @@
+.body_services  {
+    background-color: $ligth-grayish-blue;
+    padding: 75px 20px;
+}
+.head-services  {
+    text-align: center;
+    &__question  {
+        @include h2 ;
+        margin-bottom: 25px
+    }
+
+    &__answer   {
+        @include text_style;
+        margin-bottom: 50px;
+    }
+}
+.services  {
+    text-align: center;
+
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: 25px;
+
+    &__title  {
+        @include h3 ;
+    }
+    &__description  {
+        @include text_style;
+        margin-top: 10px;
+    }
+}

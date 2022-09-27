@@ -17,3 +17,35 @@
             + 'Please make sure it is defined in `$breakpoints` map.';
     }
 }
+
+// text
+@mixin text_style {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color:$grayish-blue ;
+}
+
+@mixin h2 {
+    font-size: 3.3rem;
+    color: $dark-blue;
+    font-weight: 400;
+}
+
+@mixin h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: $dark-blue; 
+}
+
+// Button
+@mixin request_button {
+    background: linear-gradient(90deg, $lime-green, $bright-cyan);
+    color: $white;
+    border: 0;
+    height: 45px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 30px;
+
+}
