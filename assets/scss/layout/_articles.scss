@@ -15,10 +15,22 @@
     padding: 0 25px 100px 25px;
     row-gap: 25px;
 
+    @include respond-to ('medium')  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    @include respond-to ('large')  {
+        display: flex;
+       flex-direction: row;
+       column-gap: 25px;
+    }
+
 
 }
 .article  {
-
+    max-width: 275px;
     a  {
         color: $dark-blue;
         &:hover  {

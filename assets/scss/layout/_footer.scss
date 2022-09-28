@@ -2,6 +2,21 @@
     background-color: $dark-blue;
     color: $very-ligth-gray;
 
+
+    @include respond-to ('medium')  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to ('extra-large')  {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+
     &__left  {
         display: flex;
         flex-direction: column;
@@ -9,17 +24,25 @@
         justify-content: center;
         row-gap: 15px;
         padding-top: 15px;
+
+        @include respond-to ('extra-large')  {
+            width: 30%;
+            row-gap: 25px;
+        }
+
         &__logo  {
         background: url('../images/logo2.svg') center/contain no-repeat ;
         fill: $white;
-        height: 45px;
-        width: 125px;
+        height: 70px;
+        width: 150px;
+
         }
         &__icons  {
             display: flex;
             align-items: center;
             justify-content: space-around;
             width: 50%;
+            max-width: 200px;
         }
     }
     &__middle  {
@@ -30,9 +53,32 @@
         row-gap: 15px;
         margin: 25px 0 ;
 
+        @include respond-to ('medium')  {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            padding-top: 20px;
+            width: 70%;
+            height: 100%;
+         }
+
+        @include respond-to ('extra-large')  {
+           display: grid;
+           grid-template-columns: 1fr 1fr ;
+           padding-top: 10px;
+           width: 25%;
+           text-align: left;
+
+        }
+
         &__link  {
             font-size: 1.2rem;
             font-weight: 400;
+
+            @include respond-to ('medium')  {
+                font-size: 1.7rem;
+                font-weight: 300;
+                
+             }
         }
     }
     &__right  {
@@ -42,6 +88,15 @@
        justify-content: center;
        row-gap: 20px;
        padding-bottom: 25px;
+
+       @include respond-to ('extra-large')  {
+        justify-content: flex-end;
+        align-items: end;
+        width: 35%;
+        height: 100%;
+        padding-top: 50px;
+
+     }
 
         &__button  {
         @include request_button;
