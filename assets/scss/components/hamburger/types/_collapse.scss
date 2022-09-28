@@ -3,6 +3,7 @@
    * Collapse
    */
   .hamburger--collapse {
+    background-color: transparent;
     .hamburger-inner {
       top: auto;
       bottom: 0;
@@ -22,7 +23,7 @@
       }
     }
 
-    &.is-active {
+    &.isactive {
       .hamburger-inner {
         transform: translate3d(0, ($hamburger-layer-spacing + $hamburger-layer-height) * -1, 0) rotate(-45deg);
         transition-delay: 0.22s;

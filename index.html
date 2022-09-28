@@ -39,7 +39,7 @@
       </ul>
       <button class="navbar__button request-button">Request Invite</button>
 
-      <button class="navbar__hamburger hamburger" type="button">
+      <button class="navbar__hamburger hamburger--collapse" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -126,9 +126,9 @@
               <img src="./assets/images/image-currency.jpg" alt="">
             </div>
             <p class="article__author">By Claire Robinson</p>
-          <h4 class="article__title">
+          <a href="#"><h4 class="article__title">
             Receive money in any currency with no fees
-          </h4>
+          </h4></a>
           <p class="article__content">
             The world is getting smaller and we’re becoming more mobile. So why
             should you be forced to only receive money in a single …
@@ -139,9 +139,9 @@
             <img src="./assets/images/image-restaurant.jpg" alt="">
           </div>
           <p class="article__author">By Wilson Hutton</p>
-          <h4 class="article__title">
+          <a href="#"><h4 class="article__title">
             Treat yourself without worrying about money
-          </h4>
+          </h4></a>
           <p class="article__content">
             Our simple budgeting feature allows you to separate out your
             spending and set realistic limits each month. That means you …
@@ -152,9 +152,9 @@
             <img src="./assets/images/image-plane.jpg" alt="">
           </div>
           <p class="article__author">By Wilson Hutton</p>
-          <h4 class="article__title">
+          <a href="#"><h4 class="article__title">
             Take your Easybank card wherever you go
-          </h4>
+          </h4></a>
           <p class="article__content">
             We want you to enjoy your travels. This is why we don’t charge any
             fees on purchases while you’re abroad. We’ll even show you …
@@ -165,9 +165,9 @@
             <img src="./assets/images/image-confetti.jpg" alt="">
           </div>
           <p class="article__author">By Claire Robinson</p>
-          <h4 class="article__title">
+          <a href="#"><h4 class="article__title">
             Our invite-only Beta accounts are now live!
-          </h4>
+          </h4></a>
           <p class="article__content">
             After a lot of hard work by the whole team, we’re excited to launch
             our closed beta. It’s easy to request an invite through the site ...
@@ -178,31 +178,27 @@
     <footer class="footer">
       <div class="footer__left">
         <div class="footer__left__logo"></div>
-        <div class="footer__left__icons icons">
-          <ul class="icons__links">
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-youtube"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li><i class="fa-brands fa-pinterest"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-          </ul>
-        </div>
+          <ul class="footer__left__icons icons">
+            <a href="#"><li><i class="fa-brands fa-facebook"></i></li></a>
+            <a href="#"><li><i class="fa-brands fa-youtube"></i></li></a>
+            <a href="#"><li><i class="fa-brands fa-twitter"></i></li></a>
+            <a href="#"><li><i class="fa-brands fa-pinterest"></i></li></a>
+            <a href="#"><li><i class="fa-brands fa-instagram"></i></li></a>
+          </ul>      
       </div>
-      <div class="footer__middle">
-        <ul class="footer__middle__links">
-          <li>About Us</li>
-          <li>Contact</li>
-          <li>Blog</li>
-          <li>Careers</li>
-          <li>Support</li>
-          <li>Privacy Policy</li>
+        <ul class="footer__middle">
+          <a href="#"><li class="footer__middle__link">About Us</li></a>
+          <a href="#"><li class="footer__middle__link">Contact</li></a>
+          <a href="#"><li class="footer__middle__link">Blog</li></a>
+          <a href="#"><li class="footer__middle__link">Careers</li></a>
+          <a href="#"><li class="footer__middle__link">Support</li></a>
+          <a href="#"><li class="footer__middle__link">Privacy Policy</li></a>
         </ul>
-      </div>
       <div class="footer__right">
         <button class="footer__right__button request-button">
           Request Invite
         </button>
-        <p class="copyright">© Easybank. All Rights Reserved</p>
+        <p class="footer__right__copyright">© Easybank. All Rights Reserved</p>
       </div>
     </footer>
 
@@ -212,5 +208,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Tiyyo </a>.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

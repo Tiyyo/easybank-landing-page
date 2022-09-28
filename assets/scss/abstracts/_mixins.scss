@@ -48,4 +48,9 @@
     font-weight: 600;
     border-radius: 30px;
 
+    &:hover  {
+        cursor: pointer;
+        background: linear-gradient(90deg, hsl(136, 65%, 70%), hsl(192 70% 70%));
+    }
+
 }

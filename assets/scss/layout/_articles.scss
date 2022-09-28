@@ -12,12 +12,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 25px;
+    padding: 0 25px 100px 25px;
     row-gap: 25px;
 
 
 }
 .article  {
+
+    a  {
+        color: $dark-blue;
+        &:hover  {
+            color: $lime-green;
+            cursor: pointer;
+        }
+        }
+
     width: fit-content;
     text-align: left;
     background-color: $white;
@@ -37,19 +46,25 @@
         font-weight: 400;
         color: $grayish-blue;
         margin-bottom: 15px;
+        padding-left: 25px;
     }
     &__title  {
         font-size: 1.7rem;
         font-weight: 400;
-        padding: 0 70px 0 0 ;
+        padding: 0 25px 0 25px ;
         margin-bottom: 15px;
+ 
     }
     &__content  {
         margin-bottom: 30px;
         color: $grayish-blue;
         font-size: 1.4rem;
         font-weight: 400;
-        padding: 0 45px 0 0 ;
+        padding: 0 20px 0 25px ;
         line-height: 1.2;
     }
+}
+
+a  {
+color: $dark-blue;
 }

@@ -17,4 +17,14 @@ body{
     font-family: 'Public Sans', sans-serif;
     font-size: 1.8rem;
     min-height: 100vh;
+    backdrop-filter: blur(10px)
+}
+
+a, a:visited  {
+   text-decoration: none;
+   color: $very-ligth-gray;
+}
+a:hover  {
+    cursor: pointer;
+    color: $lime-green;
 }
