@@ -178,7 +178,7 @@ a:hover {
   background-color: hsl(0deg, 0%, 98%);
   overflow: visible;
 }
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -200,16 +200,18 @@ a:hover {
   top: 0;
   left: 0;
   background: url("../images/bg-intro-mobile.svg") center/cover no-repeat;
-  height: 45vh;
+  height: 40vh;
   width: 100%;
 }
 @media (min-width: 1201px) {
   .header__background__intro {
+    display: none;
     background: url("../images/bg-intro-mobile.svg") center/contain no-repeat;
-    height: 1000px;
+    height: 1250px;
+    width: 1000px;
     top: -200px;
-    background-position-x: 300px;
-    background-position-y: -225px;
+    background-position-x: 800px;
+    background-position-y: -300px;
   }
 }
 .header__background__mockup {
@@ -221,14 +223,14 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
 }
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
   .header__background__mockup {
     background: url("../images/image-mockups.png") center/contain no-repeat;
-    background-position-x: 600px;
+    background-position-x: 200px;
     height: 80vh;
     right: 0;
-    top: -50px;
-    left: 0%;
+    top: -420px;
+    left: 0;
     transform: translateX(0%);
   }
 }
@@ -244,7 +246,7 @@ a:hover {
 }
 @media (min-width: 1201px) {
   .header__text {
-    width: 30%;
+    width: 50%;
     text-align: left;
     align-items: flex-start;
     padding-left: 50px;
