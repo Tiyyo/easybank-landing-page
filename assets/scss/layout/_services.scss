@@ -52,7 +52,6 @@
     max-width: 275px;
 
     @include respond-to ('medium')  {
-        justify-content: flex-start;
         align-items: flex-start;
     }
 
@@ -63,4 +62,7 @@
         @include text_style;
         margin-top: 10px;
     }
+}
+.services_budgeting {
+    height: 220px;
 }

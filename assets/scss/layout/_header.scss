@@ -42,14 +42,14 @@
 
             position: absolute;
             max-width: 900px;
-            top: -175px;
+            top: -105px;
             left: 50%;
             transform: translate(-50%, -50%);
             height: 100%;
             width: 80%;
 
             @include respond-to ('small')  {
-                top: -200px;
+                top: -140px;
                 height: 100%;
                 width: 60%;
             }
