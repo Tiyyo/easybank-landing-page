@@ -31,6 +31,12 @@
 }
 .article  {
     max-width: 275px;
+    transition: 0.25s ease-in ;
+    overflow: hidden;
+
+    &:hover  {
+        transform: translateY(-10px);
+    }
     a  {
         color: $dark-blue;
         &:hover  {

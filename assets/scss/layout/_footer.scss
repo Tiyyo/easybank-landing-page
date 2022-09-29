@@ -42,7 +42,7 @@
             align-items: center;
             justify-content: space-around;
             width: 50%;
-            max-width: 200px;
+            max-width: 175px;
         }
     }
     &__middle  {
@@ -73,11 +73,17 @@
         &__link  {
             font-size: 1.2rem;
             font-weight: 400;
+            transform: scale(1);
+            transition: all 0.25s ease-in-out ;
 
             @include respond-to ('medium')  {
-                font-size: 1.7rem;
+                font-size: 1.3rem;
                 font-weight: 300;
                 
+                &:hover  {
+                    padding-left: 15px;
+                    transform: scale(1.1);
+                }
              }
         }
     }
@@ -101,6 +107,8 @@
         &__button  {
         @include request_button;
         width: 50%;
+        max-width: 140px;
+        height: 37px;
         }
 
         &__copyright  {
@@ -111,6 +119,22 @@
 
 }
 
-i{
-    font-size: 2rem;
+.icon{
+    font-size: 1.8rem;
+    transform: rotate(0);
+    animation: rotate 2s linear forwards;
+
+    &:hover  {
+        animation: rotate 2s linear forwards;
+        @keyframes rotate {
+            0%{
+                transform: rotate(0);
+                transform: scale(1);
+            }
+            100%{
+                transform: rotate(360deg);
+                transform: scale(2);
+            }
+        }
+    }
 }

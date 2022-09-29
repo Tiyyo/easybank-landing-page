@@ -2,6 +2,12 @@
     background-color: $very-ligth-gray;
     overflow: visible;
 
+    &.isactive {
+        mix-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.5);
+        filter: blur(2px);
+    }
+
     @include respond-to ('large')  {
         display: flex;
         flex-direction: row;
@@ -13,59 +19,59 @@
         order: 2;
         position: relative;
         width: 100%;
-        height: 35vh;
         overflow: visible;
         z-index: 10;
 
-        @include respond-to ('large')  {
-     
+        @include respond-to ('large') {
+            min-height: 100%;
         }
 
-        &__intro  {
-        position: absolute;
-        position: relative;
-        top: 0;
-        left: 0;
-        background: url('../images/bg-intro-mobile.svg') center/cover no-repeat;
-        height: 40vh;
-        width: 100%;
-
-        @include respond-to ('extra-large')  {
-            display: none;
-            background: url('../images/bg-intro-mobile.svg') center/contain no-repeat; 
-            height: 1250px;
-            width: 1000px;
-
-            top: -200px;
-            background-position-x: 800px;
-            background-position-y: -300px;
-            }
+        &__intro {
+            z-index: 0;
+            background: url('../images/bg-intro-mobile.svg') cover/center no-repeat;
+            height: 100px;
+            width: 100px;
         }
     
         &__mockup  {
-            background: url('../images/image-mockups.png')
-            center/contain no-repeat;
+
+            img {
+                object-fit: fill;
+                width: 100%;
+            }
+
             position: absolute;
-            height: 600px;
-            width: 100%;
-            top: -200px;
+            max-width: 900px;
+            top: -175px;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 80%;
+
+            @include respond-to ('small')  {
+                top: -200px;
+                height: 100%;
+                width: 60%;
+            }
+            @include respond-to ('medium')  {
+                top: -350px;
+                height: 100%;
+                width: 60%;
+            }
+
 
             @include respond-to ('large')  {
-            background: url('../images/image-mockups.png')
-            center/contain no-repeat;  
-            background-position-x: 200px;
-            height: 80vh;
-            right: 0;
-            top: -420px;
-            left: 0;
-            transform: translateX(0%);
+            left: 60%;
+            top:-40%;
+            transform: translate(-50%, -50%);
+            height: 50vh;
+            width: 50vw;
+        
             }
 
         }
       
-    }
+}
     &__text  {
         display: flex;
         justify-content: center;
@@ -75,16 +81,19 @@
         row-gap: 1.8rem;
         padding: 0 15px 100px 15px;
         z-index: 20;
+        margin-top: 20%;
 
         @include respond-to ('extra-large')  {
+            margin-top: 0;
            width: 50%;
            text-align: left;
            align-items: flex-start;
-           padding-left: 50px;
+           padding-left: 150px;
            order: 1;
     
         }
     }
+
 }
 
 .text  {
